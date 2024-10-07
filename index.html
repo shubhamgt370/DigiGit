@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Card Activation Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SIM Card Activation Service</h1>
+
+        <!-- Activate/Deactivate Form -->
+        <div class="form-section">
+            <h2>Activate/Deactivate SIM Card</h2>
+            <form id="simForm">
+                <label for="simNumber">SIM Number:</label>
+                <input type="text" id="simNumber" name="simNumber" required>
+
+                <label for="action">Action:</label>
+                <select id="action" name="action">
+                    <option value="activate">Activate</option>
+                    <option value="deactivate">Deactivate</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Get SIM Details Form -->
+        <div class="form-section">
+            <h2>Get SIM Card Details</h2>
+            <form id="getDetailsForm">
+                <label for="simNumberDetails">SIM Number:</label>
+                <input type="text" id="simNumberDetails" name="simNumberDetails" required>
+                <button type="submit">Get Details</button>
+            </form>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result" class="result-section">
+            <h2>Result</h2>
+            <p id="output"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
